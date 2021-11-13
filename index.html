@@ -1,0 +1,183 @@
+<link rel="stylesheet" href="styles.css">
+
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Valorant Agent Survey Form</h1>
+    <p id="description" class="description text-center">
+      Thank you for taking the time to help us improve the platform
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >UID<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="UID"
+      />
+    </div>
+    <div class="form-group">
+      <p>What is your current rank?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current rank</option>
+        <option value="Iron-Bronze">Iron-Bronze</option>
+        <option value="Silver-Gold">Silver-Gold</option>
+        <option value="Platinum-Diamond">Platinum-Diamond</option>
+        <option value="Immortal">Immortal</option>
+        <option value="Radiant">Radiant</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Would you recommend Valorant to a friend?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        What is your main role in Valorant?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="Duelist">Duelist</option>
+        <option value="Initiator">Initiator</option>
+        <option value="Sentinel">Sentinel</option>
+        <option value="Controller">Controller</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What agent do you think needs buff?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="Phoenix"
+          type="checkbox"
+          class="input-checkbox"
+        />Phoenix</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="Sage"
+          type="checkbox"
+          class="input-checkbox"
+        />Sage</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Omen"
+          type="checkbox"
+          class="input-checkbox"
+        />Omen</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="astra"
+          type="checkbox"
+          class="input-checkbox"
+        />Astra</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Brimstone"
+          type="checkbox"
+          class="input-checkbox"
+        />Brimstone</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Breach"
+          type="checkbox"
+          class="input-checkbox"
+        />Breach</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="reyna"
+          type="checkbox"
+          class="input-checkbox"
+        />Reyna</label
+      >
+      
+    </div>
+
+    <div class="form-group">
+      <p>Any more agent that is not included ?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter here"
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
